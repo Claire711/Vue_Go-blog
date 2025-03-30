@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+#top{
+    position: fixed;
+    top:0px;
+    height: 7%;
+  width: 100%;
+    background-color: #2F4F4F;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+#top_left{
+  position: absolute;
+  text-align: center;
+  top:8px;
+  left: 20%;
+  font-size: 20px;
+  color: darkgray;
+}
+
+ul{
+  /* 移除列表前小标志。一个导航栏并不需要列表标记 */
+  list-style-type: none;
+  text-align: center;
+  margin-top: 5px;
+  position: relative;
+  top:40px;
+  justify-content: space-between;
+  height: 1vh;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5rem 6rem 1.5rem  6rem; 
+  overflow: visible; 
+  background-color: aliceblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+li a{
+  text-decoration: none;
+  color: rgb(101, 173, 195);
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+
+#search{
+  font-size: 0.75rem; /* 12px */
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+#search:hover{
+  box-shadow: #61cef9 0px 0px 10px 1px;
+}
+#search:focus{
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-color: transparent;
+}
+li{
+  padding-left: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 8px;
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #FFA07A;
+}
+.ul2{
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  background-color: var(--secondary-color);
+  min-width: 120px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  z-index: 1000;
+  
+}
+.ul2 li{
+  float: none;
+  text-align: center;
+
+}
+#li5:hover ul{
+  display: block;
+}
